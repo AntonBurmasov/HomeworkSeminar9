@@ -12,16 +12,17 @@ int ReadNumber(string message)
 }
 
 void PrintNto1(int n)
-{    Console.Write(n + " ");
-     n= n - 1;
-    
-     if(n <= 0)
+{
+    Console.Write(n + " ");
+    n = n - 1;
+
+    if (n <= 0)
     {
         return;
     }
     else
     {
-      PrintNto1(n);
+        PrintNto1(n);
 
     }
 
