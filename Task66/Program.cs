@@ -13,20 +13,20 @@ int ReadNumber(string message)
 
 void PrintSumMtoN(int m, int n, int sum)
 {
-   
-  sum = sum + m;
-  m = m + 1;
-    if( m > n)
+
+    sum = sum + m;
+    m = m + 1;
+    if (m > n)
     {
-      Console.WriteLine(sum);
-      return;
+        Console.WriteLine(sum);
+        return;
 
     }
 
     else
     {
-      PrintSumMtoN(m, n, sum);
-      
+        PrintSumMtoN(m, n, sum);
+
     }
 
 }
@@ -35,10 +35,10 @@ int numberM = ReadNumber("Введите M");
 int numberN = ReadNumber("Введите N");
 int sum = 0;
 
-if(numberM > numberN)
+if (numberM > numberN)
 {
-Console.WriteLine("Число M не должно быть больше числа N.");
-return;
+    Console.WriteLine("Число M не должно быть больше числа N.");
+    return;
 }
 
 
